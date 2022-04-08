@@ -10,17 +10,24 @@
     </header>
     <div>
       <section class="box">
-        <h1>What are you looking for?</h1>
-        <ul>
-          <li>Side</li>
-          <li>Main Dish</li>
-          <li>Dessert</li>
-          <li>Entire Meal</li>
-        </ul>
-        <button class="cook">Let's Cook!</button>
+        <h1><span class="shift">What are you looking for?<span class="red">*</span></span></h1>
+        <section class="dishes shift">
+          <label><input type="radio" value="sides" name="dish">Sides</label>
+          <label><input type="radio" value="mains" name="dish">Main Dish</label>
+          <label><input type="radio" value="desserts" name="dish">Dessert</label>
+          <label><input type="radio" value="entire-meal" name="dish">Entire Meal</label>
+        </section>
+        <button class="cook shift" >Let's Cook!</button>
       </section>
       <section class="box">
-        <img src="./assets/cookpot.svg" alt="cookpot icon" width="100" height="100" </img>
+       <div class="icon">
+         <img src="./assets/cookpot.svg" alt="cookpot icon" width="100" height="100" </img>
+       </div>
+       <div class="show-meal hidden">
+         <h3>You should make:</h3>
+         <h2>Can you see this now</h2>
+         <button class="clear">Clear</button>
+       </div>
       </section>
     </div>
   </body>
